@@ -1,3 +1,5 @@
+import 'package:dev_vantra/AuthScreens/AuthScreen.dart';
+import 'package:dev_vantra/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -27,7 +29,9 @@ class _Page2State extends State<Page2> {
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         elevation: 0, backgroundColor: Color(0xffEBEBEB)),
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.off(AuthScreen());
+                    },
                     child: Text(
                       "Skip",
                       style: TextStyle(color: Colors.black),
@@ -41,7 +45,7 @@ class _Page2State extends State<Page2> {
               ),
               Image.asset(
                 "assets/images/page2.png",
-                height: 320,
+                width: 300,
               ),
               SizedBox(
                 height: 40,
@@ -64,12 +68,11 @@ class _Page2State extends State<Page2> {
                 height: 45,
                 width: 350,
                 child: ElevatedButton(
-                  onPressed: () {
-                   
-                  },
+                  onPressed: () {},
                   child: Text(
-                     "Swipe Next  >",
+                    "Swipe Next  >",
                     style: GoogleFonts.lato(
+                                  fontWeight: FontWeight.bold,
                         color: Colors.white, fontSize: 17, letterSpacing: 1),
                   ),
                   style: ElevatedButton.styleFrom(

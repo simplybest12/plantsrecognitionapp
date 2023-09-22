@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999902492406",
+    "project_id": "devvantri-a8fa7",
+    "storage_bucket": "devvantri-a8fa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999902492406:android:88de5eb612302d6ae29ed7",
+        "android_client_info": {
+          "package_name": "com.example.dev_vantra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkiq9ORHiQkYnYfYkGgubi3MsZQyYlf1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -36,17 +36,8 @@ class _SplashScreenState extends State<SplashScreen> {
             width: MediaQuery.of(context).size.width,
           ),
           Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SvgPicture.asset('assets/images/logo1.svg',
-                semanticsLabel: 'Logo',
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-             
-              ],
+            child: SvgPicture.asset('assets/svgs/logo1.svg',
+            semanticsLabel: 'Logo',
             ),
           )
         ]),

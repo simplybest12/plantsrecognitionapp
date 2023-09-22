@@ -1,5 +1,8 @@
+import 'package:dev_vantra/AuthScreens/AuthScreen.dart';
+import 'package:dev_vantra/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page3 extends StatefulWidget {
@@ -21,12 +24,12 @@ class _Page3State extends State<Page3> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-
                 SizedBox(
                   height: 150,
                 ),
                 Image.asset(
                   "assets/images/page3image.jpg",
+                  width:340,
                 ),
                 SizedBox(
                   height: 40,
@@ -49,10 +52,13 @@ class _Page3State extends State<Page3> {
                   height: 45,
                   width: 350,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.off(AuthScreen());
+                    },
                     child: Text(
                       "Get Started",
                       style: GoogleFonts.lato(
+                                    fontWeight: FontWeight.bold,
                           color: Colors.white, fontSize: 17, letterSpacing: 1),
                     ),
                     style: ElevatedButton.styleFrom(

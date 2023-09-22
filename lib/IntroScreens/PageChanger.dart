@@ -20,7 +20,8 @@ class _SmoothPageState extends State<SmoothPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            SizedBox(
+            height: 10,),
             Container(
               
               alignment: Alignment.topCenter,
